@@ -1,0 +1,67 @@
+{
+  "chat.tools.autoApprove": true,
+  "chat.agent.maxRequests": 100,
+
+  // Editor
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+
+  // Python
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "[python]": {
+    "editor.rulers": [88],
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  // C++
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 4
+  },
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+
+  // Java
+  "[java]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "java.format.settings.url": ".vscode/java-formatter.xml",
+
+  // Naming conventions
+  "namingConvention.python": {
+    "function": "snake_case",
+    "class": "PascalCase",
+    "variable": "snake_case",
+    "constant": "UPPER_CASE",
+    "module": "snake_case"
+  },
+  "namingConvention.cpp": {
+    "function": "camelCase",
+    "class": "PascalCase",
+    "variable": "camelCase",
+    "constant": "UPPER_CASE"
+  },
+  "namingConvention.java": {
+    "function": "camelCase",
+    "class": "PascalCase",
+    "variable": "camelCase",
+    "constant": "UPPER_CASE"
+  },
+
+  // File associations
+  "files.associations": {
+    "*.h": "cpp",
+    "*.hpp": "cpp",
+    "*.cpp": "cpp",
+    "*.java": "java",
+    "*.py": "python"
+  }
+}
