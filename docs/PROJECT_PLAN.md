@@ -6,25 +6,20 @@ Neural Memory Mapper is a Brain-Computer Interface (BCI) system designed to visu
 
 ## Phase 1: Environment Setup & Infrastructure (Hours 1-6)
 
-- [ ] Setup Development Environment
-  - Option A: Python with conda environment
+- [x] Setup Development Environment
   - Option B: Python with virtualenv
   - Libraries: MNE-Python, NumPy, SciPy, PyViz
-- [ ] EEG Data Pipeline Configuration
-  - Option A: OpenBCI Headset Integration
-  - Option B: Emotiv Integration
+- [x] EEG Data Pipeline Configuration
   - Option C: Mock Data Generator for Development
-- [ ] Signal Processing Framework
+- [x] Signal Processing Framework
   - Option A: Custom DSP Pipeline
-  - Option B: MNE-Python Pipeline
-  - Option C: Hybrid Approach
 - [ ] Real-time Data Streaming Setup
   - Option A: Lab Streaming Layer (LSL)
   - Option B: Custom WebSocket Implementation
   - Option C: ZeroMQ Implementation
-- [ ] Version Control & CI/CD Setup
+- [x] Version Control & CI/CD Setup
   - GitHub Actions Configuration
-  - Testing Framework Selection
+  - Testing Framework Selection (pytest)
   - Documentation Generation Pipeline
 
 ## Phase 2: Core Features Implementation (Hours 7-12)

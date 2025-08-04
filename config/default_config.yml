@@ -1,0 +1,62 @@
+# EEG Configuration
+eeg:
+  device_type: "mock" # Options: mock, openbci, emotiv
+  sampling_rate: 256
+  num_channels: 8
+  channel_names: ["Fp1", "Fp2", "F3", "F4", "C3", "C4", "P3", "P4"]
+  mock:
+    noise_level: 0.1
+    simulation_frequencies: [2, 6, 10, 20, 40] # Hz
+
+# Signal Processing Configuration
+processing:
+  window_size: 256
+  overlap: 0.5
+  frequency_bands:
+    delta: [0.5, 4]
+    theta: [4, 8]
+    alpha: [8, 13]
+    beta: [13, 30]
+    gamma: [30, 100]
+  filters:
+    bandpass:
+      order: 4
+      ripple: 0.1
+    notch:
+      frequencies: [50, 60] # Hz
+      quality_factor: 30
+
+# Memory Task Configuration
+tasks:
+  word_list:
+    list_size: 10
+    presentation_time: 2.0
+    recall_time: 60.0
+    difficulty_levels:
+      easy: 5
+      medium: 10
+      hard: 15
+  pattern:
+    grid_size: 3
+    sequence_length: 5
+    presentation_time: 1.0
+    recall_time: 30.0
+    difficulty_levels:
+      easy: 3
+      medium: 5
+      hard: 7
+
+# Visualization Configuration
+visualization:
+  update_rate: 10 # Hz
+  color_scheme: "viridis"
+  brain_map:
+    interpolation: "cubic"
+    colorbar: true
+    normalize: true
+  memory_metrics:
+    smooth_factor: 0.3
+    history_length: 100
+  accessibility:
+    high_contrast: false
+    colorblind_mode: false
